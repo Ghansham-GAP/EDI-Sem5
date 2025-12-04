@@ -4,16 +4,15 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.myapplication.R;
-import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,36 +22,18 @@ public final class ActivityMainBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final TextView headerTitle;
-
-  @NonNull
-  public final MaterialButton historyButton;
-
-  @NonNull
   public final ImageView imageView;
-
-  @NonNull
-  public final MaterialButton predictButton;
-
-  @NonNull
-  public final ProgressBar progressBar;
 
   @NonNull
   public final TextView resultText;
 
   @NonNull
-  public final MaterialButton selectButton;
+  public final Button selectButton;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull TextView headerTitle,
-      @NonNull MaterialButton historyButton, @NonNull ImageView imageView,
-      @NonNull MaterialButton predictButton, @NonNull ProgressBar progressBar,
-      @NonNull TextView resultText, @NonNull MaterialButton selectButton) {
+  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull ImageView imageView,
+      @NonNull TextView resultText, @NonNull Button selectButton) {
     this.rootView = rootView;
-    this.headerTitle = headerTitle;
-    this.historyButton = historyButton;
     this.imageView = imageView;
-    this.predictButton = predictButton;
-    this.progressBar = progressBar;
     this.resultText = resultText;
     this.selectButton = selectButton;
   }
@@ -84,33 +65,9 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.header_title;
-      TextView headerTitle = ViewBindings.findChildViewById(rootView, id);
-      if (headerTitle == null) {
-        break missingId;
-      }
-
-      id = R.id.historyButton;
-      MaterialButton historyButton = ViewBindings.findChildViewById(rootView, id);
-      if (historyButton == null) {
-        break missingId;
-      }
-
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
-        break missingId;
-      }
-
-      id = R.id.predictButton;
-      MaterialButton predictButton = ViewBindings.findChildViewById(rootView, id);
-      if (predictButton == null) {
-        break missingId;
-      }
-
-      id = R.id.progressBar;
-      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
-      if (progressBar == null) {
         break missingId;
       }
 
@@ -121,13 +78,12 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.selectButton;
-      MaterialButton selectButton = ViewBindings.findChildViewById(rootView, id);
+      Button selectButton = ViewBindings.findChildViewById(rootView, id);
       if (selectButton == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, headerTitle, historyButton, imageView,
-          predictButton, progressBar, resultText, selectButton);
+      return new ActivityMainBinding((LinearLayout) rootView, imageView, resultText, selectButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
