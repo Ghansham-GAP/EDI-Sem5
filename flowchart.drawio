@@ -1,0 +1,199 @@
+<mxfile host="app.diagrams.net" modified="2025-11-27T12:00:00.000Z" agent="5.0" version="20.5.3" editor="diagramly">
+  <diagram id="compact" name="Compact Flowchart">
+    <mxGraphModel dx="900" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- NODES -->
+
+        <mxCell id="A" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="B" value="App Launched?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="110" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="C" value="MainActivity onCreate" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="200" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="D" value="Load UI (activity_main.xml)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="180" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="E" value="Load TFLite Model" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="280" width="180" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="F" value="Init TFLite Interpreter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="180" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="G" value="Setup Image Picker Callback" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="340" width="200" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="H" value="User Clicks 'Select Image'?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="420" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="I" value="Launch Image Gallery Intent" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="510" width="200" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="J" value="Image Selected?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="580" width="160" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="V" value="Idle" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="600" width="100" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="K" value="Get Image Data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="670" width="180" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="L" value="Decode to Bitmap" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="730" width="180" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="M" value="Display Image in ImageView" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="790" width="200" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="N" value="runModel(bitmap)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="850" width="180" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="O" value="Resize Bitmap to 224x224" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="850" width="200" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="P" value="Convert to Grayscale Float Array" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="910" width="220" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="Q" value="Run TFLite Interpreter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="970" width="200" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="R" value="Prediction Output" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1030" width="180" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="S" value="Compare Class Scores" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1100" width="200" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="T" value="🩻 Fractured" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1210" width="150" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="U" value="✅ Normal" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1210" width="150" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="W" value="Idle" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1290" width="120" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- EDGES (ALL WITH GEOMETRY + ARROWS) -->
+
+        <mxCell id="eA_B" style="endArrow=block;html=1;" edge="1" parent="1" source="A" target="B">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eB_C" style="endArrow=block;html=1;" edge="1" parent="1" source="B" target="C">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eC_D" style="endArrow=block;html=1;" edge="1" parent="1" source="C" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eC_E" style="endArrow=block;html=1;" edge="1" parent="1" source="C" target="E">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eE_F" style="endArrow=block;html=1;" edge="1" parent="1" source="E" target="F">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eC_G" style="endArrow=block;html=1;" edge="1" parent="1" source="C" target="G">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eG_H" style="endArrow=block;html=1;" edge="1" parent="1" source="G" target="H">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eH_I" style="endArrow=block;html=1;" edge="1" parent="1" source="H" target="I">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eI_J" style="endArrow=block;html=1;" edge="1" parent="1" source="I" target="J">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eJ_V" value="No" style="endArrow=block;html=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="J" target="V">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eJ_K" value="Yes" style="endArrow=block;html=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="J" target="K">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eK_L" style="endArrow=block;html=1;" edge="1" parent="1" source="K" target="L">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eL_M" style="endArrow=block;html=1;" edge="1" parent="1" source="L" target="M">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eM_N" style="endArrow=block;html=1;" edge="1" parent="1" source="M" target="N">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eN_O" style="endArrow=block;html=1;" edge="1" parent="1" source="N" target="O">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eO_P" style="endArrow=block;html=1;" edge="1" parent="1" source="O" target="P">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eP_Q" style="endArrow=block;html=1;" edge="1" parent="1" source="P" target="Q">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eQ_R" style="endArrow=block;html=1;" edge="1" parent="1" source="Q" target="R">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eR_S" style="endArrow=block;html=1;" edge="1" parent="1" source="R" target="S">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eS_T" value="Fractured" style="endArrow=block;html=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="S" target="T">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eS_U" value="Normal" style="endArrow=block;html=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="S" target="U">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eT_W" style="endArrow=block;html=1;" edge="1" parent="1" source="T" target="W">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eU_W" style="endArrow=block;html=1;" edge="1" parent="1" source="U" target="W">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
