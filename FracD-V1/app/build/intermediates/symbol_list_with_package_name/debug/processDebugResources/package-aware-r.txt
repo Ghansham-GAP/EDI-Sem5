@@ -3309,6 +3309,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3318,6 +3319,8 @@ id groups
 id header_title
 id hide_ime_id
 id hideable
+id historyButton
+id history_recycler_view
 id home
 id homeAsUp
 id honorRequest
@@ -3336,6 +3339,10 @@ id info
 id invisible
 id inward
 id italic
+id item_history_date
+id item_history_image
+id item_history_result
+id item_history_time
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3577,6 +3584,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar_history
 id top
 id topPanel
 id touch_outside
@@ -3728,6 +3736,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_history
 layout activity_main
 layout activity_splash
 layout custom_dialog
@@ -3748,6 +3757,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_history
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

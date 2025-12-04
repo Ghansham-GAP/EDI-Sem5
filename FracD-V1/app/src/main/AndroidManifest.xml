@@ -36,6 +36,12 @@
             android:name="com.example.myapplication.MainActivity"
             android:exported="false" />
 
+        <!-- History Activity -->
+        <activity
+            android:name="com.example.myapplication.HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+
     </application>
 
 </manifest>

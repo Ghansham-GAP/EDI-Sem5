@@ -23,6 +23,12 @@ public final class ActivityMainBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final TextView headerTitle;
+
+  @NonNull
+  public final MaterialButton historyButton;
+
+  @NonNull
   public final ImageView imageView;
 
   @NonNull
@@ -37,10 +43,13 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final MaterialButton selectButton;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull ImageView imageView,
+  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull TextView headerTitle,
+      @NonNull MaterialButton historyButton, @NonNull ImageView imageView,
       @NonNull MaterialButton predictButton, @NonNull ProgressBar progressBar,
       @NonNull TextView resultText, @NonNull MaterialButton selectButton) {
     this.rootView = rootView;
+    this.headerTitle = headerTitle;
+    this.historyButton = historyButton;
     this.imageView = imageView;
     this.predictButton = predictButton;
     this.progressBar = progressBar;
@@ -75,6 +84,18 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.header_title;
+      TextView headerTitle = ViewBindings.findChildViewById(rootView, id);
+      if (headerTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.historyButton;
+      MaterialButton historyButton = ViewBindings.findChildViewById(rootView, id);
+      if (historyButton == null) {
+        break missingId;
+      }
+
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -105,8 +126,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, imageView, predictButton, progressBar,
-          resultText, selectButton);
+      return new ActivityMainBinding((LinearLayout) rootView, headerTitle, historyButton, imageView,
+          predictButton, progressBar, resultText, selectButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

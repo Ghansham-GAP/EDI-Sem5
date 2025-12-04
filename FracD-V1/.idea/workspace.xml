@@ -4,15 +4,27 @@
     <shared>
       <config>
         <device id="_android_virtual_device_id_Pixel_6" />
-        <device id="_android_virtual_device_id_Pixel_9_Pro" />
-        <device id="_device_class_tablet" />
         <device id="_device_class_phone" />
+        <device id="_android_virtual_device_id_Pixel_3a_API_33_x86_64" />
+        <device id="_device_class_tablet" />
+        <device id="_android_virtual_device_id_Pixel_9_Pro" />
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_history.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
           <dock>desk</dock>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+        <config>
+          <state>Landscape</state>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>

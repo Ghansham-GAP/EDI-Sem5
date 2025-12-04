@@ -3308,6 +3308,7 @@ int id frost 0x7f0800c6
 int id fullscreen_header 0x7f0800c7
 int id ghost_view 0x7f0800c8
 int id ghost_view_holder 0x7f0800c9
+int id glide_custom_view_target_tag 0x7f0801fe
 int id gone 0x7f0800ca
 int id graph 0x7f0800cb
 int id graph_wrap 0x7f0800cc
@@ -3317,6 +3318,8 @@ int id groups 0x7f0800cf
 int id header_title 0x7f0800d0
 int id hide_ime_id 0x7f0800d1
 int id hideable 0x7f0800d2
+int id historyButton 0x7f0801ff
+int id history_recycler_view 0x7f080200
 int id home 0x7f0800d3
 int id homeAsUp 0x7f0800d4
 int id honorRequest 0x7f0800d5
@@ -3335,6 +3338,10 @@ int id info 0x7f0800e1
 int id invisible 0x7f0800e2
 int id inward 0x7f0800e3
 int id italic 0x7f0800e4
+int id item_history_date 0x7f080201
+int id item_history_image 0x7f080202
+int id item_history_result 0x7f080203
+int id item_history_time 0x7f080205
 int id item_touch_helper_previous_elevation 0x7f0800e5
 int id jumpToEnd 0x7f0800e6
 int id jumpToStart 0x7f0800e7
@@ -3576,6 +3583,7 @@ int id title 0x7f0801ce
 int id titleDividerNoCustom 0x7f0801cf
 int id title_template 0x7f0801d0
 int id toggle 0x7f0801d1
+int id toolbar_history 0x7f080204
 int id top 0x7f0801d2
 int id topPanel 0x7f0801d3
 int id touch_outside 0x7f0801d4
@@ -3727,6 +3735,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_history 0x7f0b006d
 int layout activity_main 0x7f0b001c
 int layout activity_splash 0x7f0b006c
 int layout custom_dialog 0x7f0b001d
@@ -3747,6 +3756,7 @@ int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
 int layout ime_base_split_test_activity 0x7f0b002d
 int layout ime_secondary_split_test_activity 0x7f0b002e
+int layout item_history 0x7f0b006e
 int layout m3_alert_dialog 0x7f0b002f
 int layout m3_alert_dialog_actions 0x7f0b0030
 int layout m3_alert_dialog_title 0x7f0b0031

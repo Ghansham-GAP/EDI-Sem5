@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -18,6 +19,8 @@ import java.io.FileInputStream
 import java.io.IOException
 import java.nio.MappedByteBuffer
 import java.nio.channels.FileChannel
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,8 +29,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var resultText: TextView
     private lateinit var selectButton: Button
     private lateinit var predictButton: Button
+    private lateinit var historyButton: Button
     private lateinit var progressBar: ProgressBar
     private var selectedBitmap: Bitmap? = null
+    private var selectedImageUri: Uri? = null
+
+    companion object {
+        val historyList = ArrayList<HistoryItem>()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         resultText = findViewById(R.id.resultText)
         selectButton = findViewById(R.id.selectButton)
         predictButton = findViewById(R.id.predictButton)
+        historyButton = findViewById(R.id.historyButton)
         progressBar = findViewById(R.id.progressBar)
 
         // Load TFLite model
@@ -44,8 +54,8 @@ class MainActivity : AppCompatActivity() {
 
         val pickImage = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
-                val imageUri = result.data?.data
-                val inputStream = contentResolver.openInputStream(imageUri!!)
+                selectedImageUri = result.data?.data
+                val inputStream = contentResolver.openInputStream(selectedImageUri!!)
                 selectedBitmap = BitmapFactory.decodeStream(inputStream)
                 imageView.setImageBitmap(selectedBitmap)
             }
@@ -64,6 +74,12 @@ class MainActivity : AppCompatActivity() {
 
                 Thread {
                     val prediction = runModel(it)
+                    val sdfDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                    val sdfTime = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
+                    val currentDate = sdfDate.format(Date())
+                    val currentTime = sdfTime.format(Date())
+                    historyList.add(HistoryItem(selectedImageUri.toString(), prediction, currentDate, currentTime))
+
                     runOnUiThread {
                         progressBar.visibility = View.GONE
                         resultText.visibility = View.VISIBLE
@@ -76,6 +92,11 @@ class MainActivity : AppCompatActivity() {
                     }
                 }.start()
             }
+        }
+
+        historyButton.setOnClickListener {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
         }
     }
 
