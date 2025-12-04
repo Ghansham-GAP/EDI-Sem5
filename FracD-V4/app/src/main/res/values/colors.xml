@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Medical Blue Theme -->
+    <color name="colorPrimary">#00796B</color> <!-- Teal -->
+    <color name="colorPrimaryDark">#004D40</color> <!-- Dark Teal -->
+    <color name="colorAccent">#4DB6AC</color> <!-- Light Teal -->
+
+    <!-- Backgrounds -->
+    <color name="windowBackground">#E0F2F1</color> <!-- Light Cyan -->
+    <color name="cardBackground">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="textColorPrimary">#212121</color> <!-- Almost Black -->
+    <color name="textColorSecondary">#757575</color> <!-- Medium Gray -->
+
+    <!-- Feedback -->
+    <color name="colorSuccess">#4CAF50</color> <!-- Green -->
+    <color name="colorError">#F44336</color> <!-- Red -->
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
