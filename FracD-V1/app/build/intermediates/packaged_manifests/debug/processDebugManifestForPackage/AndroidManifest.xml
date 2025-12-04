@@ -36,16 +36,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
 
-        <!-- ✅ Your new Kotlin MainActivity -->
+        <!-- Splash Screen -->
         <activity
-            android:name="com.example.myapplication.MainActivity"
-            android:exported="true" >
+            android:name="com.example.myapplication.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.myapplication.MainActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

@@ -8,8 +8,8 @@
         "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myapplication.app-debug-35:/layout_activity_main.xml.flat",
-        "source": "com.example.myapplication.app-main-37:/layout/activity_main.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-debug-35:\\drawable_ic_medical_logo.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-main-37:\\drawable\\ic_medical_logo.xml"
     },
     {
         "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-debug-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -48,6 +48,14 @@
         "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-debug-35:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-main-37:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-debug-35:\\drawable_splash_gradient.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-main-37:\\drawable\\splash_gradient.xml"
+    },
+    {
         "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-debug-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -66,6 +74,10 @@
     {
         "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-debug-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-debug-35:/layout_activity_splash.xml.flat",
+        "source": "com.example.myapplication.app-main-37:/layout/activity_splash.xml"
     },
     {
         "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.13\\com.example.myapplication.app-debug-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",

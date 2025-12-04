@@ -3023,6 +3023,7 @@ int drawable ic_launcher_foreground 0x7f070092
 int drawable ic_m3_chip_check 0x7f070093
 int drawable ic_m3_chip_checked_circle 0x7f070094
 int drawable ic_m3_chip_close 0x7f070095
+int drawable ic_medical_logo 0x7f0700e8
 int drawable ic_mtrl_checked_circle 0x7f070096
 int drawable ic_mtrl_chip_checked_black 0x7f070097
 int drawable ic_mtrl_chip_checked_circle 0x7f070098
@@ -3101,6 +3102,7 @@ int drawable notification_template_icon_bg 0x7f0700e0
 int drawable notification_template_icon_low_bg 0x7f0700e1
 int drawable notification_tile_bg 0x7f0700e2
 int drawable notify_panel_notification_icon_bg 0x7f0700e3
+int drawable splash_gradient 0x7f0700e7
 int drawable test_level_drawable 0x7f0700e4
 int drawable tooltip_frame_dark 0x7f0700e5
 int drawable tooltip_frame_light 0x7f0700e6
@@ -3516,6 +3518,8 @@ int id snapMargins 0x7f080196
 int id south 0x7f080197
 int id spacer 0x7f080198
 int id special_effects_controller_view_tag 0x7f080199
+int id splash_logo 0x7f0801fc
+int id splash_title 0x7f0801fd
 int id spline 0x7f08019a
 int id split_action_bar 0x7f08019b
 int id spread 0x7f08019c
@@ -3724,6 +3728,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
+int layout activity_splash 0x7f0b006c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f
@@ -4603,6 +4608,7 @@ int style Theme_MaterialComponents_Light_NoActionBar_Bridge 0x7f100272
 int style Theme_MaterialComponents_NoActionBar 0x7f100273
 int style Theme_MaterialComponents_NoActionBar_Bridge 0x7f100274
 int style Theme_MyApplication 0x7f100275
+int style Theme_MyApplication_NoActionBar 0x7f100468
 int style ThemeOverlay_AppCompat 0x7f100276
 int style ThemeOverlay_AppCompat_ActionBar 0x7f100277
 int style ThemeOverlay_AppCompat_Dark 0x7f100278
