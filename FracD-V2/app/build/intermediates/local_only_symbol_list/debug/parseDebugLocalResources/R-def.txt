@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color cardBackground
+color colorAccent
+color colorError
+color colorPrimary
+color colorPrimaryDark
+color colorSuccess
+color textColorPrimary
+color textColorSecondary
+color white
+color windowBackground
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id imageView
+id predictButton
+id progressBar
+id resultText
+id selectButton
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.MyApplication
+style Theme.MyApplication
+xml backup_rules
+xml data_extraction_rules
+xml mainl
